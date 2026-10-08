@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RawDawg AI - Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .pulsating-image {
+            max-width: 80vw;
+            max-height: 60vh;
+            height: auto;
+            animation: pulse 2.5s infinite ease-in-out;
+            will-change: transform, opacity;
+        }
+
+        h3 {
+            color: #ffffff;
+            font-weight: 300;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            text-transform: lowercase;
+            opacity: 0.9;
+            text-align: center;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
+            50% {
+                transform: scale(1.08);
+                opacity: 1;
+                /* filter: drop-shadow(0 0 25px rgba(255, 220, 100, 0.4)); */
+            }
+            100% {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="./rawdawg-ai-logo-blur.jpg" alt="RawDawg AI" class="pulsating-image">
+        <h3>coming soon :)</h3>
+    </div>
+
+</body>
+</html>
